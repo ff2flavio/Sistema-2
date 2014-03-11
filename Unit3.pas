@@ -1,0 +1,48 @@
+unit Unit3;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Grids, DBGrids, StdCtrls;
+
+type
+  Tfconsulta = class(TForm)
+    Label1: TLabel;
+    Edit1: TEdit;
+    Button1: TButton;
+    DBGrid1: TDBGrid;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Button5: TButton;
+    Button6: TButton;
+    procedure Button2Click(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fconsulta: Tfconsulta;
+
+implementation
+
+uses Unit4;
+
+{$R *.dfm}
+
+procedure Tfconsulta.Button2Click(Sender: TObject);
+begin
+        {banco.table1.append; }
+        fadicionar.showmodal;
+end;
+
+procedure Tfconsulta.Button6Click(Sender: TObject);
+begin
+  fconsulta.Close;
+end;
+
+end.

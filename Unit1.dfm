@@ -1,0 +1,43 @@
+object Fprincipal: TFprincipal
+  Left = 317
+  Top = 249
+  Width = 566
+  Height = 480
+  Caption = 'Tela principal'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object MainMenu1: TMainMenu
+    Top = 8
+    object Arquivo1: TMenuItem
+      Caption = '&Arquivo'
+      object Adicionar1: TMenuItem
+        Caption = 'Adicionar'
+        OnClick = Adicionar1Click
+      end
+      object Consulta1: TMenuItem
+        Caption = 'Consulta'
+        OnClick = Consulta1Click
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object Sair1: TMenuItem
+        Caption = 'Sair'
+        OnClick = Sair1Click
+      end
+    end
+    object Ajuda1: TMenuItem
+      Caption = 'Ajuda'
+      OnClick = Ajuda1Click
+    end
+  end
+end

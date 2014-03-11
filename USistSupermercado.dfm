@@ -1,0 +1,35 @@
+object Form1: TForm1
+  Left = 213
+  Top = 135
+  Width = 1007
+  Height = 553
+  Caption = 'Sistema de supermercado'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object MainMenu1: TMainMenu
+    Top = 65520
+    object Arquivo1: TMenuItem
+      Caption = 'Produtos'
+      object Inserir1: TMenuItem
+        Caption = 'Listar'
+      end
+      object Inserir2: TMenuItem
+        Caption = 'Novo'
+      end
+      object Editar1: TMenuItem
+        Caption = 'Editar'
+      end
+    end
+    object Sobre1: TMenuItem
+      Caption = 'Sobre'
+    end
+  end
+end
